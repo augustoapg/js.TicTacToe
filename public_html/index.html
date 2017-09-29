@@ -1,0 +1,67 @@
+<!--
+Name:  Augusto Araujo Peres Goncalez
+Date:  May 23 - 2017
+
+App Description: This is a webpage that allows the user to play the game
+    tic-tac-toe. The game selects at random the first player, highlights the 
+    last play (the last cell clicked) and keeps score of the winners
+Page Description: the page that contains the board for the game
+Files: main.css - the page that contains the styles for the index.html
+    tictactoe.js - the Javascript functions and constants for the game
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/main.css" type="text/css" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <h1>Tic Tac Toe!</h1>
+        </header>
+
+        <!-- game board -->
+        <table>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </table>
+
+        <!-- play information and controls -->
+        <p id="goMessage">Player <span id="player">X</span> Go!</p>
+        <button id="reset">Reset Game</button>
+
+        <!-- footer -->
+        <footer>Augusto A P Goncalez @ Sheridan SYST10199 Web Programming
+        </footer>
+
+        <!-- hidden elements used for displaying results -->
+        <div id="message">
+            <p>GAME OVER!</p>
+            <h3 id="winner"></h3>
+            <p>&mdash;click anywhere in the box to dismiss this message&mdash;
+            </p>
+        </div>
+        <div id="overlay"></div>
+
+
+        <script type="text/javascript" src="scripts/tictactoe.js"></script>
+    </body>
+</html>
